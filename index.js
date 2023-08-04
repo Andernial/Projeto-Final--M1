@@ -1,3 +1,5 @@
+let pontosJogador = 0
+
 const botao = document.getElementById("btn");
 botao.addEventListener("click", function verificarNome() {
   const nomeJogador = document.getElementById("nome");
@@ -20,6 +22,7 @@ function verificaPergunta1(){
         alert("Você Acertou !")
         document.getElementById("botao-pergunta1").disabled = true;
         document.getElementById("certo1").style.display = "block";
+        pontosJogador = pontosJogador+1
     }else if(resposta === "(B)" || resposta === "(C)" || resposta === "(D)"){
         document.getElementById("botao-pergunta1").disabled = true;
         document.getElementById("errado1").style.display = "block";
