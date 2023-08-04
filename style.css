@@ -1,1 +1,6 @@
-/* Linha 02 á 12 - Nicolas /*  /* Linha 12 á 22 - Manu/*
+body {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(183, 108, 61);
+}
