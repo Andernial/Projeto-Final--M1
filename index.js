@@ -19,8 +19,10 @@ function verificaPergunta1(){
     if(resposta === "(A)"){
         alert("Você Acertou !")
         document.getElementById("botao-pergunta1").disabled = true;
+        document.getElementById("certo1").style.display = "block";
     }else if(resposta === "(B)" || resposta === "(C)" || resposta === "(D)"){
         document.getElementById("botao-pergunta1").disabled = true;
+        document.getElementById("errado1").style.display = "block";
         alert("Você Errou")
     }else{
         
