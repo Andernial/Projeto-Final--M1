@@ -4,3 +4,9 @@ body {
     box-sizing: border-box;
     background-color: rgb(183, 108, 61);
 }
+
+#erro{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
