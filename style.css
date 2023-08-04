@@ -3,6 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: rgb(60, 57, 67);
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #btn {
@@ -48,7 +53,9 @@ body {
   flex-direction: column;
 }
 
-.container2 {
+#container2 {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
