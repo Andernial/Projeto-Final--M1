@@ -4,3 +4,30 @@ body {
     box-sizing: border-box;
     background-color: rgb(183, 108, 61);
 }
+
+#btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo do botão - Pode ser alterada */
+    color: #fff; /* Cor do texto do botão - Pode ser alterada */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Transições suaves */
+    cursor: pointer;
+  }
+  
+  #btn:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse - Pode ser alterada */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+  }
+  
+  #btn:active {
+    transform: translateY(0); /* Efeito de clique - Volta à posição original */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra mais leve ao clicar */
+  }
+
+
+  
