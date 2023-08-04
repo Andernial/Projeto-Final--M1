@@ -23,7 +23,7 @@ function verificaPergunta1(){
         document.getElementById("botao-pergunta1").disabled = true;
         alert("Você Errou")
     }else{
-        document.getElementById("botao-pergunta1").disabled = true;
+        
         alert("Valor inválido")
     }
 }
