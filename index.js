@@ -33,6 +33,6 @@ function verificaPergunta1(){
     }
 }
 
-
+window.onload(window.scrollTo(0, 0))
 
 let pontuação
