@@ -6,7 +6,7 @@ botao.addEventListener("click", function verificarNome() {
   if (nomeJogador.value === "") {
     document.getElementById("erro").style.display = "block";
   } else {
-    location.href = "";
+    location.href = "#container2";
   }
 });
 function pergunta(){
