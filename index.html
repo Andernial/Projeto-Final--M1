@@ -9,19 +9,27 @@
 </head>
 
 <body>
-    <div class="Container">
+    <div class="container-nome">
         <input type="text" id="nome" />
         <br>
         <a href="#container2"><button id="btn">Enviar</button></a>
     </div>
 
-    <div id="container2">
+    <div class="container-pergunta" id="container2">
         <h1>Primeira pergunta</h1>
-        <button class="btn" id="botao-pergunta1" onclick="pergunta()">Pergunta 1</button>
+       <a href="#container3"> <button class="btn" id="botao-pergunta1" onclick="pergunta()">Pergunta 1</button></a>
         <div id="resposta">
             <ion-icon name="close-circle-outline" id="errado1"></ion-icon>
             <ion-icon name="checkmark-circle-outline" id="certo1"></ion-icon>
         </div>
+        </div>
+        <div class="container-pergunta" id="container3">
+            <h1>Segunda pergunta</h1>
+            <button class="btn" id="botao-pergunta2" onclick="pergunta()">Pergunta 1</button>
+            <div id="resposta">
+                <ion-icon name="close-circle-outline" id="errado2"></ion-icon>
+                <ion-icon name="checkmark-circle-outline" id="certo2"></ion-icon>
+            </div>
     </div>
     <script src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

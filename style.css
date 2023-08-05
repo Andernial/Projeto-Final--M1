@@ -51,7 +51,7 @@ html {
   /* Sombra mais leve ao clicar */
 }
 
-.Container {
+.container-nome {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -59,8 +59,7 @@ html {
   align-items: center;
   flex-direction: column;
 }
-
-#container2 {
+.container-pergunta{
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -69,7 +68,6 @@ html {
   flex-direction: column;
   color: white;
 }
-
 #errado1{
   color: red;
   height: 30px;
