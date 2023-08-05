@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "press start";
+  src: url(/fontes/PressStart2P-Regular.ttf);
+}
+*{
+font-family: "press start";
+}
 body {
   margin: 0;
   padding: 0;
