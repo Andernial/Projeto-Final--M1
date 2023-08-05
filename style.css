@@ -81,3 +81,8 @@ html {
   width: 30px;
   display: none;
 }
+
+.btn{
+  cursor: pointer;
+
+}
