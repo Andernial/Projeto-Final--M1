@@ -19,12 +19,12 @@ html {
 
 
 
-#btn {
+.btn-menu {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background: linear-gradient(blue 0%, red);
   /* Cor de fundo do botão - Pode ser alterada */
-  color: #fff;
+  color: aquamarine;
   /* Cor do texto do botão - Pode ser alterada */
   font-size: 16px;
   border: none;
@@ -32,25 +32,13 @@ html {
   /* Bordas arredondadas */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   /* Sombra suave */
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-  /* Transições suaves */
-  cursor: pointer;
+  transition: 0.7s;
 }
 
-#btn:hover {
-  background-color: #0056b3;
-  /* Cor de fundo ao passar o mouse - Pode ser alterada */
-  transform: translateY(-2px);
-  /* Efeito de elevação ao passar o mouse */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  /* Sombra mais intensa ao passar o mouse */
-}
-
-#btn:active {
-  transform: translateY(0);
-  /* Efeito de clique - Volta à posição original */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  /* Sombra mais leve ao clicar */
+.btn-menu:hover{
+  box-shadow: 0px 0px 10px rgb(42, 250, 0);
+  scale: 1.2;
+  transition: 0.5s;
 }
 
 .container-nome {
@@ -66,6 +54,12 @@ html {
   color: red;
   display: none;
   margin: 5px;
+}
+
+#titulo-menu{
+  font-size: 45px;
+  color: rgb(0, 255, 0);
+  text-shadow: 7px 8px black;
 }
 
 .container-pergunta{
@@ -85,6 +79,7 @@ html {
 }
 
 #certo1, #certo2{
+  transition: 1s;
   color: greenyellow;
   height: 30px;
   width: 30px;
