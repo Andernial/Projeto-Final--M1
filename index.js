@@ -58,6 +58,16 @@ botaoPergunta4.addEventListener("click", function quartaPergunta() {
   verficiarAlternativa()
 
 })
+const botaoPergunta5 = document.getElementById("botao-pergunta5")
+botaoPergunta5.addEventListener("click", function quintaPergunta() {
+  if (perguntas == 4) {
+    alert("Em qual linguagem de programação foi feito o jogo Minecraft ?")
+    resposta = prompt("(A) C++ (B) Html (C) Java (D) Java-Script    (Exemplo: A)")
+    perguntas = 5;
+  }
+  verficiarAlternativa()
+
+})
 
 // function para saber o fluxo das respostas
 
@@ -120,6 +130,21 @@ function verficiarAlternativa() {
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta4").disabled = true;
       document.getElementById("lista4").style.color = "red";
+      alert("Você Errou")
+    } else {
+
+      alert("Valor inválido")
+    }
+  } else if (perguntas == 5) {
+
+    if (resposta === "C" || resposta === "c") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta5").disabled = true;
+      document.getElementById("lista5").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
+      document.getElementById("botao-pergunta5").disabled = true;
+      document.getElementById("lista5").style.color = "red";
       alert("Você Errou")
     } else {
 
