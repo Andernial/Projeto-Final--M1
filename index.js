@@ -90,4 +90,7 @@ function verficiarAlternativa(){
 }
 }
 }
-window.onload(window.scrollTo(0, 0))
+
+function sobePagina(){
+  return window.scrollTo(0, 0)
+}
