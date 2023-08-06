@@ -93,6 +93,7 @@ html {
 }
 
 .btn:hover{
-  background: linear-gradient( to bottom, #027afb, #1977dc, #076fdd);
+  background:  linear-gradient(to bottom, #0056b3, #007bff);
   color:#fff
 }
+
