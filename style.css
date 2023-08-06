@@ -53,7 +53,7 @@ html {
 #erroNome{
   color: red;
   display: none;
-  margin: 5px;
+  margin-bottom: 15px;
 }
 
 #titulo-menu{
@@ -93,12 +93,13 @@ html {
   border-radius: 10px;
   background-color: black;
   color: #fff;
-
+  border: none;
 }
 
 .btn:hover{
   background:  linear-gradient(to bottom, #0056b3, #007bff);
-  color:#fff
+  color:#fff;
+  border: none;
 }
 
 .btn:focus {
