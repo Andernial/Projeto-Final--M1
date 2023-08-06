@@ -55,8 +55,15 @@ html {
   border: none;
   background-color: aquamarine;
   padding: 10px;
+  
 }
-
+#nome::placeholder{
+  color: rgb(18, 66, 18);;
+  
+}
+#nome:focus::placeholder {
+  color: transparent;
+}
 #erroNome{
   color: red;
   display: none;
