@@ -16,7 +16,7 @@ function pergunta(){
 }
 
 function verificaPergunta1(){
-    let resposta= prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A" )
+    let resposta= prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A)")
 
     resposta = resposta.toUpperCase();
     
@@ -34,6 +34,7 @@ function verificaPergunta1(){
         alert("Valor inválido")
     }
 }
+
 
 window.onload(window.scrollTo(0, 0))
 
