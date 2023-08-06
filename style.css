@@ -71,14 +71,14 @@ html {
   flex-direction: column;
   color: white;
 }
-#errado1, #errado2{
+#errado1, #errado2, #errado3{
   color: red;
   height: 30px;
   width: 30px;
   display: none;
 }
 
-#certo1, #certo2{
+#certo1, #certo2, #certo3{
   transition: 1s;
   color: greenyellow;
   height: 30px;
@@ -104,4 +104,16 @@ html {
 .btn:focus {
   outline: none;
   box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.4);
+}
+
+.progresso{
+  position: fixed;
+  top: 1vw;
+  left: 1vw;
+  display: none;
+}
+
+.progresso ul{
+  list-style: none;
+  color: white;
 }
