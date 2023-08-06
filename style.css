@@ -97,3 +97,7 @@ html {
   color:#fff
 }
 
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.4);
+}
