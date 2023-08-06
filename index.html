@@ -9,27 +9,36 @@
 </head>
 
 <body>
+    <!-- Inicio, aqui é onde o usúario coloca o nome e inicia o jogo -->
     <div class="container-nome">
         <input type="text" id="nome" />
         <br>
+        <div id="erroNome">digite um nome</div>
         <button id="btn">Enviar</button>
     </div>
 
+
+         <!-- pagina da primeira pergunta -->
+
     <div class="container-pergunta" id="container2">
         <h1>Primeira pergunta</h1>
-       <a href="#container3"> <button class="btn" id="botao-pergunta1" onclick="pergunta()">Pergunta 1</button></a>
+       <a href="#container3"> <button class="btn" id="botao-pergunta1">Pergunta 1</button></a>
         <div id="resposta">
             <ion-icon name="close-circle-outline" id="errado1"></ion-icon>
             <ion-icon name="checkmark-circle-outline" id="certo1"></ion-icon>
         </div>
         </div>
+
+        <!-- pagina da segunda pergunta -->
         <div class="container-pergunta" id="container3">
             <h1>Segunda pergunta</h1>
-            <button class="btn" id="botao-pergunta2" onclick="pergunta()">Pergunta 1</button>
+            <button class="btn" id="botao-pergunta2">Pergunta 2</button>
             <div id="resposta">
                 <ion-icon name="close-circle-outline" id="errado2"></ion-icon>
                 <ion-icon name="checkmark-circle-outline" id="certo2"></ion-icon>
             </div>
+
+
     </div>
     <script src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

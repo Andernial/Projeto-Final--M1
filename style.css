@@ -17,6 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 #btn {
   display: inline-block;
   padding: 10px 20px;
@@ -59,6 +61,13 @@ html {
   align-items: center;
   flex-direction: column;
 }
+
+#erroNome{
+  color: red;
+  display: none;
+  margin: 5px;
+}
+
 .container-pergunta{
   height: 100vh;
   width: 100vw;
@@ -68,14 +77,14 @@ html {
   flex-direction: column;
   color: white;
 }
-#errado1{
+#errado1, #errado2{
   color: red;
   height: 30px;
   width: 30px;
   display: none;
 }
 
-#certo1{
+#certo1, #certo2{
   color: greenyellow;
   height: 30px;
   width: 30px;
