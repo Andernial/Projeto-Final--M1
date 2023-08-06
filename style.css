@@ -55,15 +55,8 @@ html {
   border: none;
   background-color: aquamarine;
   padding: 10px;
-  
 }
-#nome::placeholder{
-  color: rgb(18, 66, 18);;
-  
-}
-#nome:focus::placeholder {
-  color: transparent;
-}
+
 #erroNome{
   color: red;
   display: none;
@@ -85,7 +78,7 @@ html {
   flex-direction: column;
   color: white;
 }
-#errado1, #errado2, #errado3{
+/* #errado1, #errado2, #errado3{
   color: red;
   height: 30px;
   width: 30px;
@@ -98,7 +91,7 @@ html {
   height: 30px;
   width: 30px;
   display: none;
-}
+} */
 
 .btn{
   cursor: pointer;
