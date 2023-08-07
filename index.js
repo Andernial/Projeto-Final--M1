@@ -73,7 +73,7 @@ botaoPergunta5.addEventListener("click", function quintaPergunta() {
 const botaoPergunta6 = document.getElementById("botao-pergunta6")
 botaoPergunta6.addEventListener("click", function sextaPergunta() {
   if (perguntas == 5) {
-    alert("Qual desses Campeões do jogo league of legends  é a melhor opção para jogar na Top Line?")
+    alert("Qual desses Campeões do jogo league of legends é a melhor opção para jogar na Top Lane?")
     resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka       (Exemplo: A)")
     perguntas = 6;
   }
@@ -107,9 +107,31 @@ botaoPergunta8.addEventListener("click", function oitavaPergunta() {
 const botaoPergunta9 = document.getElementById("botao-pergunta9")
 botaoPergunta9.addEventListener("click", function nonaPergunta() {
   if (perguntas == 8) {
-    alert("No jogo Free Fire, quanto a pistola DESERT gera de Dano no Headshot com o inimigo sem capacete?")
-    resposta = prompt("(A) 259 (B) 329 (C) 495 (D) 369  (Exemplo: A)")
+    alert("No jogo Free Fire, o quanto de dano base é causado em um Headshot utilizando uma pistola desert ?")
+    resposta = prompt("(A) 0 (B) 329 (C) 495 (D) 369  (Exemplo: A)")
     perguntas = 9;
+  }
+  verficiarAlternativa()
+
+})
+
+const botaoPergunta10 = document.getElementById("botao-pergunta10")
+botaoPergunta10.addEventListener("click", function decimaPergunta() {
+  if (perguntas == 9) {
+    alert("Qual é o nome da série de jogos em que você explora um mundo de fantasia como o personagem chamado Link?")
+    resposta = prompt("(A) The Legend Of Zelda (B) Final Fantasy (C) The Elders Scrolls (D) Lego  (Exemplo: A)")
+    perguntas = 10;
+  }
+  verficiarAlternativa()
+
+})
+
+const botaoPergunta11 = document.getElementById("botao-pergunta11")
+botaoPergunta11.addEventListener("click", function decimaSegundaPergunta() {
+  if (perguntas == 10) {
+    alert("Qual destes jogos é conhecido pelo seu acrônimo \"LoL\"?")
+    resposta = prompt("(A) League of Legends (B) The Legend Of Zelda (C) Lord of the Rings (D) Among Us  (Exemplo: A)")
+    perguntas = 11;
   }
   verficiarAlternativa()
 
@@ -125,7 +147,7 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
-    } else if (resposta === "B" || resposta === "b" || resposta === "C" || resposta === "C" || resposta === "D" || resposta === "d") {
+    } else if (resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "red";
       alert("Você Errou")
@@ -259,16 +281,48 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta9").disabled = true;
       document.getElementById("lista9").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
-    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta9").disabled = true;
       document.getElementById("lista9").style.color = "red";
       alert("Você Errou")
     } else {
       alert("Você digitou um valor invalido")
-      resposta = prompt("(A) 259 (B) 329 (C) 495 (D) 369  (Exemplo: A)")
+      resposta = prompt("(A) 0 (B) 329 (C) 495 (D) 369  (Exemplo: A)")
       verficiarAlternativa()
     }
-  } 
+  } else if (perguntas == 10) {
+
+    if (resposta === "A" || resposta === "a") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta10").disabled = true;
+      document.getElementById("lista10").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "D" || resposta === "d" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
+      document.getElementById("botao-pergunta10").disabled = true;
+      document.getElementById("lista10").style.color = "red";
+      alert("Você Errou")
+    } else {
+      alert("Você digitou um valor invalido")
+      resposta = prompt("(A) The Legend Of Zelda (B) Final Fantasy (C) The Elders Scrolls (D) Lego  (Exemplo: A)")
+      verficiarAlternativa()
+    }
+  } else if (perguntas == 11) {
+
+    if (resposta === "A" || resposta === "a") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta11").disabled = true;
+      document.getElementById("lista11").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "D" || resposta === "d" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
+      document.getElementById("botao-pergunta11").disabled = true;
+      document.getElementById("lista11").style.color = "red";
+      alert("Você Errou")
+    } else {
+      alert("Você digitou um valor invalido")
+      resposta = prompt("(A) League of Legends (B) The Legend Of Zelda (C) Lord of the Rings (D) Among Us  (Exemplo: A)")
+      verficiarAlternativa()
+    }
+  }  
 }
 
   // --- function que exibe o resultad --- //
