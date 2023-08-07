@@ -1,10 +1,9 @@
 let pontosJogador = 0
 let perguntas = 0;
-
+const nomeJogador = document.getElementById("nome");
 
 const botao = document.getElementById("btn");
 botao.addEventListener("click", function verificarNome() {
-  const nomeJogador = document.getElementById("nome");
   if (nomeJogador.value === "") {
     document.getElementById("erroNome").style.display = "block";
     document.getElementById("nome").style.border = "2px solid red";
@@ -217,7 +216,19 @@ function verficiarAlternativa() {
     }
   }
 }
-
+  // --- function que exibe o resultad --- //
+function finalizarJogo(){
+  document.getElementById("botao-pergunta7").disabled = true;
+  document.getElementById("botao-result").style.display = "none";
+  if(pontosJogador <= 3 ){
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: red'>" + pontosJogador + "</span>"
+  }else if(pontosJogador >3 && pontosJogador <=6){
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: orange'>" + pontosJogador + "</span>"
+  }else if(pontosJogador >= 7){
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: green'>" + pontosJogador + "</span>"
+  }
+}
 function sobePagina() {//essa função é chamada quando todo o body carrega. ele retorna o scroll para a posição inicial.
   return window.scrollTo(0, 0)
 }
+
