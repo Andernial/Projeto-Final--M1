@@ -70,8 +70,31 @@ botaoPergunta5.addEventListener("click", function quintaPergunta() {
 
 })
 
-// function para saber o fluxo das respostas
+// Pergunta 6
+const botaoPergunta6 = document.getElementById("botao-pergunta6")
+botaoPergunta6.addEventListener("click", function sextaPergunta() {
+  if (perguntas == 5) {
+    alert("Qual desses Campeões do jogo league of legends  é a melhor opção para jogar na Top Line?")
+    resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka       (Exemplo: A)")
+    perguntas = 6;
+  }
+  verficiarAlternativa()
 
+})
+
+// Pergunta 7
+const botaoPergunta7 = document.getElementById("botao-pergunta7")
+botaoPergunta7.addEventListener("click", function setimaPergunta() {
+  if (perguntas == 6) {
+    alert("No jogo Candy Crush Saga quantos doces formam uma Colour Bomb?")
+    resposta = prompt("(A)  7 (B)  6 (C) 4 (D) 5      (Exemplo: A)")
+    perguntas = 7;
+  }
+  verficiarAlternativa()
+
+})
+
+// function para saber o fluxo das respostas
 function verficiarAlternativa() {
 
   // Pergunta 1
@@ -154,6 +177,42 @@ function verficiarAlternativa() {
     } else {
       alert("Você digiou um valor invalido")
       resposta = prompt("(A) C++ (B) Html (C) Java (D) Java-Script    (Exemplo: A)")
+      verficiarAlternativa()
+    }
+
+    //Pergunta 6
+  } else if (perguntas == 6) {
+
+    if (resposta === "C" || resposta === "c") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta6").disabled = true;
+      document.getElementById("lista6").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
+      document.getElementById("botao-pergunta6").disabled = true;
+      document.getElementById("lista6").style.color = "red";
+      alert("Você Errou")
+    } else {
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka            (Exemplo: A)")
+      verficiarAlternativa()
+    }
+
+      //Pergunta 7
+  } else if (perguntas == 7) {
+
+    if (resposta === "D" || resposta === "d") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta7").disabled = true;
+      document.getElementById("lista7").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
+      document.getElementById("botao-pergunta7").disabled = true;
+      document.getElementById("lista7").style.color = "red";
+      alert("Você Errou")
+    } else {
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) 7 (B) 6 (C) 4 (D) 5           (Exemplo: A)")
       verficiarAlternativa()
     }
   }
