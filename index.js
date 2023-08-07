@@ -92,6 +92,28 @@ botaoPergunta7.addEventListener("click", function setimaPergunta() {
   verficiarAlternativa()
 
 })
+//Pergunta 08
+const botaoPergunta8 = document.getElementById("botao-pergunta8")
+botaoPergunta8.addEventListener("click", function oitavaPergunta() {
+  if (perguntas == 7) {
+    alert("Qual é o mascote icônico da Nintendo, conhecido por aparecer em jogos como Super Mario, Mario Kart e Super Smash Bros?")
+    resposta = prompt("(A) Donkey Kong (B) Pikachu (C) Link (D) Mario  (Exemplo: A)")
+    perguntas = 8;
+  }
+  verficiarAlternativa()
+
+})
+
+const botaoPergunta9 = document.getElementById("botao-pergunta9")
+botaoPergunta9.addEventListener("click", function nonaPergunta() {
+  if (perguntas == 8) {
+    alert("No jogo Free Fire, quanto a pistola DESERT gera de Dano no Headshot com o inimigo sem capacete?")
+    resposta = prompt("(A) 259 (B) 329 (C) 495 (D) 369  (Exemplo: A)")
+    perguntas = 9;
+  }
+  verficiarAlternativa()
+
+})
 
 // function para saber o fluxo das respostas
 function verficiarAlternativa() {
@@ -120,7 +142,7 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta2").disabled = true;
       document.getElementById("lista2").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
-    } else if (resposta === "A" || resposta === "a" || resposta === "C" || resposta === "C" || resposta === "D" || resposta === "d") {
+    } else if (resposta === "A" || resposta === "a" || resposta === "C" || resposta === "c" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta2").disabled = true;
       document.getElementById("lista2").style.color = "red";
       alert("Você Errou")
@@ -214,8 +236,41 @@ function verficiarAlternativa() {
       resposta = prompt("(A) 7 (B) 6 (C) 4 (D) 5           (Exemplo: A)")
       verficiarAlternativa()
     }
-  }
+    } else if (perguntas == 8) {
+
+    if (resposta === "D" || resposta === "d") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta8").disabled = true;
+      document.getElementById("lista8").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
+      document.getElementById("botao-pergunta8").disabled = true;
+      document.getElementById("lista8").style.color = "red";
+      alert("Você Errou")
+    } else {
+      alert("Você digitou um valor invalido")
+      resposta = prompt("(A) Donkey Kong (B) Pikachu (C) Link (D) Mario  (Exemplo: A)")
+      verficiarAlternativa()
+    }
+  } else if (perguntas == 9) {
+
+    if (resposta === "C" || resposta === "c") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta9").disabled = true;
+      document.getElementById("lista9").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
+      document.getElementById("botao-pergunta9").disabled = true;
+      document.getElementById("lista9").style.color = "red";
+      alert("Você Errou")
+    } else {
+      alert("Você digitou um valor invalido")
+      resposta = prompt("(A) 259 (B) 329 (C) 495 (D) 369  (Exemplo: A)")
+      verficiarAlternativa()
+    }
+  } 
 }
+
   // --- function que exibe o resultad --- //
 function finalizarJogo(){
   document.getElementById("botao-pergunta7").disabled = true;
