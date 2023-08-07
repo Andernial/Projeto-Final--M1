@@ -70,8 +70,31 @@ botaoPergunta5.addEventListener("click", function quintaPergunta() {
 
 })
 
-// function para saber o fluxo das respostas
+// Pergunta 6
+const botaoPergunta6 = document.getElementById("botao-pergunta6")
+botaoPergunta1.addEventListener("click", function sextaPergunta() {
+  if (perguntas == 0) {
+    alert("Qual desses Campeões do jogo league of legends  é a melhor opção para jogar na Top Line?")
+    resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka       (Exemplo: A)")
+    perguntas = 1;
+  }
+  verficiarAlternativa()
 
+})
+
+// Pergunta 7
+const botaoPergunta7 = document.getElementById("botao-pergunta7")
+botaoPergunta1.addEventListener("click", function sextaPergunta() {
+  if (perguntas == 0) {
+    alert("No jogo Candy Crush Saga quantos doces formam uma Colour Bomb?")
+    resposta = prompt("(A)  7 (B)  6 (C) 4 (D) 5      (Exemplo: A)")
+    perguntas = 1;
+  }
+  verficiarAlternativa()
+
+})
+
+// function para saber o fluxo das respostas
 function verficiarAlternativa() {
 
   // Pergunta 1
@@ -171,25 +194,25 @@ function verficiarAlternativa() {
       alert("Você Errou")
     } else {
       alert("Você digiou um valor invalido")
-      resposta = prompt("(A) Hollow Knight (B) Hornet (C) False Knight (D) Watcher Knights      (Exemplo: A)")
+      resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka      (Exemplo: A)")
       verficiarAlternativa()
     }
 
       //Pergunta 7
   } else if (perguntas == 7) {
 
-    if (resposta === "C" || resposta === "c") {
+    if (resposta === "D" || resposta === "d") {
       alert("Você Acertou !")
       document.getElementById("botao-pergunta4").disabled = true;
       document.getElementById("lista4").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
-    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
       document.getElementById("botao-pergunta4").disabled = true;
       document.getElementById("lista4").style.color = "red";
       alert("Você Errou")
     } else {
       alert("Você digiou um valor invalido")
-      resposta = prompt("(A) Hollow Knight (B) Hornet (C) False Knight (D) Watcher Knights      (Exemplo: A)")
+      resposta = prompt("(A) 7 (B) 6 (C) 4 (D) 5     (Exemplo: A)")
       verficiarAlternativa()
     }
   }
