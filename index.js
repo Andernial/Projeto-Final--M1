@@ -7,12 +7,13 @@ botao.addEventListener("click", function verificarNome() {
   const nomeJogador = document.getElementById("nome");
   if (nomeJogador.value === "") {
     document.getElementById("erroNome").style.display = "block";
+    document.getElementById("nome").style.border = "2px solid red";
+    document.getElementById("titulo-menu").style.marginBottom = "50px";
   } else {
     location.href = "#container2";
     document.getElementById("progresso").style.display = "block";
   }
 });
-
 
 // Perguntas ex: primeiraPergunta; segundaPergunta...
 const botaoPergunta1 = document.getElementById("botao-pergunta1")
@@ -85,8 +86,9 @@ function verficiarAlternativa() {
       document.getElementById("lista1").style.color = "red";
       alert("Você Errou")
     } else {
-
-      alert("Valor inválido")
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A)")
+      verficiarAlternativa()
     }
     // Pergunta 2
   } else if (perguntas == 2) {
@@ -101,8 +103,9 @@ function verficiarAlternativa() {
       document.getElementById("lista2").style.color = "red";
       alert("Você Errou")
     } else {
-
-      alert("Valor inválido")
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) Fall Guys (B) Valorant (C) Counter Strike (D) League of Legend      (Exemplo: A)")
+      verficiarAlternativa()
     }
     // pergunta 3
   } else if (perguntas == 3) {
@@ -117,8 +120,9 @@ function verficiarAlternativa() {
       document.getElementById("lista3").style.color = "red";
       alert("Você Errou")
     } else {
-
-      alert("Valor inválido")
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) Limbo (B) Katana ZERO (C) Subway Surfers (D) Horizon Chase Turbo      (Exemplo: A)")
+      verficiarAlternativa()
     }
   } else if (perguntas == 4) {
 
@@ -132,8 +136,9 @@ function verficiarAlternativa() {
       document.getElementById("lista4").style.color = "red";
       alert("Você Errou")
     } else {
-
-      alert("Valor inválido")
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) Hollow Knight (B) Hornet (C) False Knight (D) Watcher Knights      (Exemplo: A)")
+      verficiarAlternativa()
     }
   } else if (perguntas == 5) {
 
@@ -147,8 +152,9 @@ function verficiarAlternativa() {
       document.getElementById("lista5").style.color = "red";
       alert("Você Errou")
     } else {
-
-      alert("Valor inválido")
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) C++ (B) Html (C) Java (D) Java-Script    (Exemplo: A)")
+      verficiarAlternativa()
     }
   }
 }
