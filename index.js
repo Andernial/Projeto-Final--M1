@@ -72,11 +72,11 @@ botaoPergunta5.addEventListener("click", function quintaPergunta() {
 
 // Pergunta 6
 const botaoPergunta6 = document.getElementById("botao-pergunta6")
-botaoPergunta1.addEventListener("click", function sextaPergunta() {
-  if (perguntas == 0) {
+botaoPergunta6.addEventListener("click", function sextaPergunta() {
+  if (perguntas == 5) {
     alert("Qual desses Campeões do jogo league of legends  é a melhor opção para jogar na Top Line?")
     resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka       (Exemplo: A)")
-    perguntas = 1;
+    perguntas = 6;
   }
   verficiarAlternativa()
 
@@ -84,11 +84,11 @@ botaoPergunta1.addEventListener("click", function sextaPergunta() {
 
 // Pergunta 7
 const botaoPergunta7 = document.getElementById("botao-pergunta7")
-botaoPergunta1.addEventListener("click", function sextaPergunta() {
-  if (perguntas == 0) {
+botaoPergunta7.addEventListener("click", function setimaPergunta() {
+  if (perguntas == 6) {
     alert("No jogo Candy Crush Saga quantos doces formam uma Colour Bomb?")
     resposta = prompt("(A)  7 (B)  6 (C) 4 (D) 5      (Exemplo: A)")
-    perguntas = 1;
+    perguntas = 7;
   }
   verficiarAlternativa()
 
@@ -185,16 +185,16 @@ function verficiarAlternativa() {
 
     if (resposta === "C" || resposta === "c") {
       alert("Você Acertou !")
-      document.getElementById("botao-pergunta4").disabled = true;
-      document.getElementById("lista4").style.color = "greenyellow";
+      document.getElementById("botao-pergunta6").disabled = true;
+      document.getElementById("lista6").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
-      document.getElementById("botao-pergunta4").disabled = true;
-      document.getElementById("lista4").style.color = "red";
+      document.getElementById("botao-pergunta6").disabled = true;
+      document.getElementById("lista6").style.color = "red";
       alert("Você Errou")
     } else {
       alert("Você digiou um valor invalido")
-      resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka      (Exemplo: A)")
+      resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka            (Exemplo: A)")
       verficiarAlternativa()
     }
 
@@ -203,16 +203,16 @@ function verficiarAlternativa() {
 
     if (resposta === "D" || resposta === "d") {
       alert("Você Acertou !")
-      document.getElementById("botao-pergunta4").disabled = true;
-      document.getElementById("lista4").style.color = "greenyellow";
+      document.getElementById("botao-pergunta7").disabled = true;
+      document.getElementById("lista7").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
-      document.getElementById("botao-pergunta4").disabled = true;
-      document.getElementById("lista4").style.color = "red";
+      document.getElementById("botao-pergunta7").disabled = true;
+      document.getElementById("lista7").style.color = "red";
       alert("Você Errou")
     } else {
       alert("Você digiou um valor invalido")
-      resposta = prompt("(A) 7 (B) 6 (C) 4 (D) 5     (Exemplo: A)")
+      resposta = prompt("(A) 7 (B) 6 (C) 4 (D) 5           (Exemplo: A)")
       verficiarAlternativa()
     }
   }
