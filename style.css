@@ -69,6 +69,7 @@ html {
   font-size: 45px;
   color: rgb(0, 255, 0);
   text-shadow: 7px 8px black;
+  text-align: center;
 }
 
 .container-pergunta{
@@ -79,6 +80,7 @@ html {
   align-items: center;
   flex-direction: column;
   color: white;
+  text-align: center;
 }
 /* #errado1, #errado2, #errado3{
   color: red;
