@@ -156,6 +156,42 @@ function verficiarAlternativa() {
       resposta = prompt("(A) C++ (B) Html (C) Java (D) Java-Script    (Exemplo: A)")
       verficiarAlternativa()
     }
+
+    //Pergunta 6
+  } else if (perguntas == 6) {
+
+    if (resposta === "C" || resposta === "c") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta4").disabled = true;
+      document.getElementById("lista4").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
+      document.getElementById("botao-pergunta4").disabled = true;
+      document.getElementById("lista4").style.color = "red";
+      alert("Você Errou")
+    } else {
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) Hollow Knight (B) Hornet (C) False Knight (D) Watcher Knights      (Exemplo: A)")
+      verficiarAlternativa()
+    }
+
+      //Pergunta 7
+  } else if (perguntas == 7) {
+
+    if (resposta === "C" || resposta === "c") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta4").disabled = true;
+      document.getElementById("lista4").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
+      document.getElementById("botao-pergunta4").disabled = true;
+      document.getElementById("lista4").style.color = "red";
+      alert("Você Errou")
+    } else {
+      alert("Você digiou um valor invalido")
+      resposta = prompt("(A) Hollow Knight (B) Hornet (C) False Knight (D) Watcher Knights      (Exemplo: A)")
+      verficiarAlternativa()
+    }
   }
 }
 
