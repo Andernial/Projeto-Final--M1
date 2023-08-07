@@ -109,7 +109,7 @@ function verficiarAlternativa() {
       document.getElementById("lista1").style.color = "red";
       alert("Você Errou")
     } else {
-      alert("Você digiou um valor invalido")
+      alert("Você digitou um valor invalido")
       resposta = prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A)")
       verficiarAlternativa()
     }
@@ -126,7 +126,7 @@ function verficiarAlternativa() {
       document.getElementById("lista2").style.color = "red";
       alert("Você Errou")
     } else {
-      alert("Você digiou um valor invalido")
+      alert("Você digitou um valor invalido")
       resposta = prompt("(A) Fall Guys (B) Valorant (C) Counter Strike (D) League of Legend      (Exemplo: A)")
       verficiarAlternativa()
     }
@@ -143,7 +143,7 @@ function verficiarAlternativa() {
       document.getElementById("lista3").style.color = "red";
       alert("Você Errou")
     } else {
-      alert("Você digiou um valor invalido")
+      alert("Você digitou um valor invalido")
       resposta = prompt("(A) Limbo (B) Katana ZERO (C) Subway Surfers (D) Horizon Chase Turbo      (Exemplo: A)")
       verficiarAlternativa()
     }
@@ -159,7 +159,7 @@ function verficiarAlternativa() {
       document.getElementById("lista4").style.color = "red";
       alert("Você Errou")
     } else {
-      alert("Você digiou um valor invalido")
+      alert("Você digitou um valor invalido")
       resposta = prompt("(A) Hollow Knight (B) Hornet (C) False Knight (D) Watcher Knights      (Exemplo: A)")
       verficiarAlternativa()
     }
@@ -175,7 +175,7 @@ function verficiarAlternativa() {
       document.getElementById("lista5").style.color = "red";
       alert("Você Errou")
     } else {
-      alert("Você digiou um valor invalido")
+      alert("Você digitou um valor invalido")
       resposta = prompt("(A) C++ (B) Html (C) Java (D) Java-Script    (Exemplo: A)")
       verficiarAlternativa()
     }
@@ -193,7 +193,7 @@ function verficiarAlternativa() {
       document.getElementById("lista6").style.color = "red";
       alert("Você Errou")
     } else {
-      alert("Você digiou um valor invalido")
+      alert("Você digitou um valor invalido")
       resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka            (Exemplo: A)")
       verficiarAlternativa()
     }
@@ -211,7 +211,7 @@ function verficiarAlternativa() {
       document.getElementById("lista7").style.color = "red";
       alert("Você Errou")
     } else {
-      alert("Você digiou um valor invalido")
+      alert("Você digitou um valor invalido")
       resposta = prompt("(A) 7 (B) 6 (C) 4 (D) 5           (Exemplo: A)")
       verficiarAlternativa()
     }
