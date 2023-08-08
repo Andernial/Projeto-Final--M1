@@ -334,7 +334,7 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta7").disabled = true;
       document.getElementById("lista7").style.color = "red";
       document.getElementById("botão-proximo7").style.backgroundColor = "black";
-      document.getElementById("botão-proximo").style.color = "white";
+      document.getElementById("botão-proximo7").style.color = "white";
       alert("Você Errou")
       location.href = "#container9";
     } else {
