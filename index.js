@@ -22,7 +22,7 @@ botaoPergunta1.addEventListener("click", function primeiraPergunta() {
     alert("Qual foi o primeiro console lançado pela empresa nintendo ?")
     resposta = prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A)")
     perguntas = 1;
-    perguntaAtual =1;
+    perguntaAtual = 1;
   }
   verficiarAlternativa()
 
@@ -129,7 +129,7 @@ botaoPergunta10.addEventListener("click", function decimaPergunta() {
 })
 
 const botaoPergunta11 = document.getElementById("botao-pergunta11")
-botaoPergunta11.addEventListener("click", function decimaSegundaPergunta() {
+botaoPergunta11.addEventListener("click", function decimaPrimeiraPergunta() {
   if (perguntas == 10) {
     alert("Qual destes jogos é conhecido pelo seu acrônimo \"LoL\"?")
     resposta = prompt("(A) League of Legends (B) The Legend Of Zelda (C) Lord of the Rings (D) Among Us  (Exemplo: A)")
@@ -138,29 +138,43 @@ botaoPergunta11.addEventListener("click", function decimaSegundaPergunta() {
   verficiarAlternativa()
 
 })
+
+const botaoPergunta12 = document.getElementById("botao-pergunta12")
+botaoPergunta12.addEventListener("click", function decimaSegundaPergunta() {
+  if (perguntas == 11) {
+    alert("Em qual linguagem de programação foi desenvolvido o clash royale")
+    resposta = prompt("(A) C# (B) JAVA (C) CSS (D) C++ (Exemplo: A)")
+    perguntas = 12;
+  }
+  verficiarAlternativa()
+
+})
+
 //botão avançar
-function proximo(){
-  if(perguntas == 1){
+function proximo() {
+  if (perguntas == 1) {
     location.href = "#container3";
-  }else if(perguntas == 2){
+  } else if (perguntas == 2) {
     location.href = "#container4";
-  }else if(perguntas == 3){
+  } else if (perguntas == 3) {
     location.href = "#container5";
-  }else if(perguntas == 4){
+  } else if (perguntas == 4) {
     location.href = "#container6";
-  }else if(perguntas == 5){
+  } else if (perguntas == 5) {
     location.href = "#container7";
-  }else if(perguntas == 6){
+  } else if (perguntas == 6) {
     location.href = "#container8";
-  }else if(perguntas == 7){
+  } else if (perguntas == 7) {
     location.href = "#container9";
-  }else if(perguntas == 8){
+  } else if (perguntas == 8) {
     location.href = "#container10";
-  }else if(perguntas == 9){
+  } else if (perguntas == 9) {
     location.href = "#container11";
-  }else if(perguntas == 10){
+  } else if (perguntas == 10) {
     location.href = "#container12";
-  }else if(perguntas == 11){
+  } else if (perguntas == 11) {
+    location.href = "#container13";
+  } else if (perguntas == 12) {
     location.href = "##parabens";
   }
 }
@@ -182,7 +196,7 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container3";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A)")
       verficiarAlternativa()
     }
@@ -201,7 +215,7 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container4";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) Fall Guys (B) Valorant (C) Counter Strike (D) League of Legend      (Exemplo: A)")
       verficiarAlternativa()
     }
@@ -220,10 +234,11 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container5";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) Limbo (B) Katana ZERO (C) Subway Surfers (D) Horizon Chase Turbo      (Exemplo: A)")
       verficiarAlternativa()
     }
+    // pergunta 4
   } else if (perguntas == 4) {
 
     if (resposta === "C" || resposta === "c") {
@@ -238,10 +253,11 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container6";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) Hollow Knight (B) Hornet (C) False Knight (D) Watcher Knights      (Exemplo: A)")
       verficiarAlternativa()
     }
+    // pergunta 5
   } else if (perguntas == 5) {
 
     if (resposta === "C" || resposta === "c") {
@@ -256,11 +272,10 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container7";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) C++ (B) Html (C) Java (D) Java-Script    (Exemplo: A)")
       verficiarAlternativa()
     }
-
     //Pergunta 6
   } else if (perguntas == 6) {
 
@@ -276,12 +291,11 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container8";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka            (Exemplo: A)")
       verficiarAlternativa()
     }
-
-      //Pergunta 7
+    //Pergunta 7
   } else if (perguntas == 7) {
 
     if (resposta === "D" || resposta === "d") {
@@ -296,11 +310,12 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container9";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) 7 (B) 6 (C) 4 (D) 5           (Exemplo: A)")
       verficiarAlternativa()
     }
-    } else if (perguntas == 8) {
+    // pergunta 8
+  } else if (perguntas == 8) {
 
     if (resposta === "D" || resposta === "d") {
       alert("Você Acertou !")
@@ -314,10 +329,11 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container10";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) Donkey Kong (B) Pikachu (C) Link (D) Mario  (Exemplo: A)")
       verficiarAlternativa()
     }
+    // pergunta 9
   } else if (perguntas == 9) {
 
     if (resposta === "C" || resposta === "c") {
@@ -332,10 +348,11 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container11";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) 0 (B) 329 (C) 495 (D) 369  (Exemplo: A)")
       verficiarAlternativa()
     }
+    // pergunta 10
   } else if (perguntas == 10) {
 
     if (resposta === "A" || resposta === "a") {
@@ -350,10 +367,11 @@ function verficiarAlternativa() {
       alert("Você Errou")
       location.href = "#container12";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) The Legend Of Zelda (B) Final Fantasy (C) The Elders Scrolls (D) Lego  (Exemplo: A)")
       verficiarAlternativa()
     }
+    // pergunta 11
   } else if (perguntas == 11) {
 
     if (resposta === "A" || resposta === "a") {
@@ -361,31 +379,55 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta11").disabled = true;
       document.getElementById("lista11").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
-      location.href = "#parabens";
-      finalizarJogo()
+      location.href = "#container13";
     } else if (resposta === "D" || resposta === "d" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
       document.getElementById("botao-pergunta11").disabled = true;
       document.getElementById("lista11").style.color = "red";
       alert("Você Errou")
-      location.href = "#parabens";
-      finalizarJogo()
+      location.href = "#container13";
     } else {
-      alert("Você digitou um valor invalido")
+      alert("Você digitou um valor inválido")
       resposta = prompt("(A) League of Legends (B) The Legend Of Zelda (C) Lord of the Rings (D) Among Us  (Exemplo: A)")
       verficiarAlternativa()
     }
-  }  
+    // pergunta 12
+  } else if (perguntas == 12) {
+
+    if (resposta === "D" || resposta === "d") {
+      alert("Você Acertou !")
+      document.getElementById("botao-pergunta12").disabled = true;
+      document.getElementById("lista12").style.color = "greenyellow";
+      pontosJogador = pontosJogador + 1
+      location.href = "#parabens";
+      finalizarJogo()
+    } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
+      document.getElementById("botao-pergunta12").disabled = true;
+      document.getElementById("lista12").style.color = "red";
+      alert("Você Errou")
+      location.href = "#parabens";
+      finalizarJogo()
+    } else {
+      alert("Você digitou um valor inválido")
+      resposta = prompt("(A) C# (B) JAVA (C) CSS (D) C++ (Exemplo: A)")
+      verficiarAlternativa()
+    }
+  }
 }
 
-  // --- function que exibe o resultad --- //
-function finalizarJogo(){
+// --- function que exibe o resultad --- //
+function finalizarJogo() {
   // document.getElementById("botao-pergunta7").disabled = true;
   // document.getElementById("botao-result").style.display = "none";
-  if(pontosJogador <= 3 ){
+  if (pontosJogador >= 0 && pontosJogador <= 3) {
     document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: red'>" + pontosJogador + "</span>"
-  }else if(pontosJogador >3 && pontosJogador <=6){
+  }
+  else if (pontosJogador > 3 && pontosJogador <= 6){
     document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: orange'>" + pontosJogador + "</span>"
-  }else if(pontosJogador >= 7){
+  }
+  else if (pontosJogador > 6 && pontosJogador <= 9) {
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: yellow'>" + pontosJogador + "</span>"
+  }
+  else if (pontosJogador > 9 && pontosJogador <= 12) {
     document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: green'>" + pontosJogador + "</span>"
   }
 }
