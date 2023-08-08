@@ -147,10 +147,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container3";
     } else if (resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "red";
       alert("Você Errou")
+      location.href = "#container3";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A)")
@@ -164,10 +166,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta2").disabled = true;
       document.getElementById("lista2").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container4";
     } else if (resposta === "A" || resposta === "a" || resposta === "C" || resposta === "c" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta2").disabled = true;
       document.getElementById("lista2").style.color = "red";
       alert("Você Errou")
+      location.href = "#container4";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) Fall Guys (B) Valorant (C) Counter Strike (D) League of Legend      (Exemplo: A)")
@@ -181,10 +185,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta3").disabled = true;
       document.getElementById("lista3").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container5";
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
       document.getElementById("botao-pergunta3").disabled = true;
       document.getElementById("lista3").style.color = "red";
       alert("Você Errou")
+      location.href = "#container5";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) Limbo (B) Katana ZERO (C) Subway Surfers (D) Horizon Chase Turbo      (Exemplo: A)")
@@ -197,10 +203,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta4").disabled = true;
       document.getElementById("lista4").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container6";
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta4").disabled = true;
       document.getElementById("lista4").style.color = "red";
       alert("Você Errou")
+      location.href = "#container6";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) Hollow Knight (B) Hornet (C) False Knight (D) Watcher Knights      (Exemplo: A)")
@@ -213,10 +221,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta5").disabled = true;
       document.getElementById("lista5").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container7";
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta5").disabled = true;
       document.getElementById("lista5").style.color = "red";
       alert("Você Errou")
+      location.href = "#container7";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) C++ (B) Html (C) Java (D) Java-Script    (Exemplo: A)")
@@ -231,10 +241,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta6").disabled = true;
       document.getElementById("lista6").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container8";
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta6").disabled = true;
       document.getElementById("lista6").style.color = "red";
       alert("Você Errou")
+      location.href = "#container8";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) Miss Fortune (B)  Ahri (C) Ornn (D) Soraka            (Exemplo: A)")
@@ -249,10 +261,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta7").disabled = true;
       document.getElementById("lista7").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container9";
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
       document.getElementById("botao-pergunta7").disabled = true;
       document.getElementById("lista7").style.color = "red";
       alert("Você Errou")
+      location.href = "#container9";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) 7 (B) 6 (C) 4 (D) 5           (Exemplo: A)")
@@ -265,10 +279,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta8").disabled = true;
       document.getElementById("lista8").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container10";
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
       document.getElementById("botao-pergunta8").disabled = true;
       document.getElementById("lista8").style.color = "red";
       alert("Você Errou")
+      location.href = "#container10";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) Donkey Kong (B) Pikachu (C) Link (D) Mario  (Exemplo: A)")
@@ -281,10 +297,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta9").disabled = true;
       document.getElementById("lista9").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container11";
     } else if (resposta === "A" || resposta === "a" || resposta === "B" || resposta === "b" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta9").disabled = true;
       document.getElementById("lista9").style.color = "red";
       alert("Você Errou")
+      location.href = "#container11";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) 0 (B) 329 (C) 495 (D) 369  (Exemplo: A)")
@@ -297,10 +315,12 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta10").disabled = true;
       document.getElementById("lista10").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#container12";
     } else if (resposta === "D" || resposta === "d" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
       document.getElementById("botao-pergunta10").disabled = true;
       document.getElementById("lista10").style.color = "red";
       alert("Você Errou")
+      location.href = "#container12";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) The Legend Of Zelda (B) Final Fantasy (C) The Elders Scrolls (D) Lego  (Exemplo: A)")
@@ -313,10 +333,14 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta11").disabled = true;
       document.getElementById("lista11").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
+      location.href = "#parabens";
+      finalizarJogo()
     } else if (resposta === "D" || resposta === "d" || resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c") {
       document.getElementById("botao-pergunta11").disabled = true;
       document.getElementById("lista11").style.color = "red";
       alert("Você Errou")
+      location.href = "#parabens";
+      finalizarJogo()
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) League of Legends (B) The Legend Of Zelda (C) Lord of the Rings (D) Among Us  (Exemplo: A)")
@@ -327,8 +351,8 @@ function verficiarAlternativa() {
 
   // --- function que exibe o resultad --- //
 function finalizarJogo(){
-  document.getElementById("botao-pergunta7").disabled = true;
-  document.getElementById("botao-result").style.display = "none";
+  // document.getElementById("botao-pergunta7").disabled = true;
+  // document.getElementById("botao-result").style.display = "none";
   if(pontosJogador <= 3 ){
     document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: red'>" + pontosJogador + "</span>"
   }else if(pontosJogador >3 && pontosJogador <=6){
