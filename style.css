@@ -3,6 +3,7 @@
   src: url(./fontes/PressStart2P-Regular.ttf);
 }
 *{
+  font-family: "press start";
 
 }
 body {
