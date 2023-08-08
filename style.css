@@ -125,12 +125,18 @@ html {
 
 .progresso{
   position: fixed;
-  top: 1vw;
-  left: 1vw;
+  text-align: center;
   display: none;
 }
 
 .progresso ul{
   list-style: none;
   color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
+
