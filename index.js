@@ -1,5 +1,6 @@
 let pontosJogador = 0
 let perguntas = 0;
+let perguntaAtual = 0;
 const nomeJogador = document.getElementById("nome");
 
 const botao = document.getElementById("btn");
@@ -21,6 +22,7 @@ botaoPergunta1.addEventListener("click", function primeiraPergunta() {
     alert("Qual foi o primeiro console lançado pela empresa nintendo ?")
     resposta = prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A)")
     perguntas = 1;
+    perguntaAtual =1;
   }
   verficiarAlternativa()
 
@@ -138,7 +140,29 @@ botaoPergunta11.addEventListener("click", function decimaSegundaPergunta() {
 })
 //botão avançar
 function proximo(){
-  location.href = "#container3";
+  if(perguntas == 1){
+    location.href = "#container3";
+  }else if(perguntas == 2){
+    location.href = "#container4";
+  }else if(perguntas == 3){
+    location.href = "#container5";
+  }else if(perguntas == 4){
+    location.href = "#container6";
+  }else if(perguntas == 5){
+    location.href = "#container7";
+  }else if(perguntas == 6){
+    location.href = "#container8";
+  }else if(perguntas == 7){
+    location.href = "#container9";
+  }else if(perguntas == 8){
+    location.href = "#container10";
+  }else if(perguntas == 9){
+    location.href = "#container11";
+  }else if(perguntas == 10){
+    location.href = "#container12";
+  }else if(perguntas == 11){
+    location.href = "##parabens";
+  }
 }
 
 // function para saber o fluxo das respostas
