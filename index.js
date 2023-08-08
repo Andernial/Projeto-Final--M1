@@ -137,7 +137,7 @@ botaoPergunta11.addEventListener("click", function decimaSegundaPergunta() {
 
 })
 //botão avançar
-function avançar(){
+function proximo(){
   location.href = "#container3";
 }
 
