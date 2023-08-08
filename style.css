@@ -152,7 +152,7 @@ html {
   border: none;
   font-family: "press start";
 }
-
+/* media querys */
 @media screen and (max-width: 480px) {
   .btn-avanca {
     display: block;
