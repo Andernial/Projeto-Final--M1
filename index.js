@@ -175,7 +175,7 @@ function proximo() {
   } else if (perguntas == 11) {
     location.href = "#container13";
   } else if (perguntas == 12) {
-    location.href = "##parabens";
+    location.href = "#parabens";
   }
 }
 
@@ -467,16 +467,16 @@ function finalizarJogo() {
   // document.getElementById("botao-pergunta7").disabled = true;
   // document.getElementById("botao-result").style.display = "none";
   if (pontosJogador >= 0 && pontosJogador <= 3) {
-    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: red'>" + pontosJogador + "</span>"
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns" + nomeJogador.value + " sua pontuação foi de <span style='color: red'>" + pontosJogador + "</span>"
   }
   else if (pontosJogador > 3 && pontosJogador <= 6){
-    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: orange'>" + pontosJogador + "</span>"
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " sua pontuação foi de <span style='color: orange'>" + pontosJogador + "</span>"
   }
   else if (pontosJogador > 6 && pontosJogador <= 9) {
-    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: yellow'>" + pontosJogador + "</span>"
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " sua pontuação foi de <span style='color: yellow'>" + pontosJogador + "</span>"
   }
   else if (pontosJogador > 9 && pontosJogador <= 12) {
-    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " Sua pontuação foi de <span style='color: green'>" + pontosJogador + "</span>"
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " sua pontuação foi de <span style='color: green'>" + pontosJogador + "</span>"
   }
 }
 function sobePagina() {//essa função é chamada quando todo o body carrega. ele retorna o scroll para a posição inicial.
