@@ -153,14 +153,23 @@ html {
   font-family: "press start";
 }
 
-.progresso li{
-  margin: 5px;
-}
-
 @media screen and (max-width: 480px) {
   .btn-avanca {
     display: block;
+    color: transparent;
+    background-color: transparent;
   }
-
-
+  .btn-avanca:hover {
+    background: linear-gradient(to bottom, #0056b3, #007bff);
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-avanca:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.4);
+  }
+  #erroNome{
+    margin-top: 85px;
+  }
 }
