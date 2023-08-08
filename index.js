@@ -144,15 +144,15 @@ function verficiarAlternativa() {
   if (perguntas == 1) {
     if (resposta === "A" || resposta === "a") {
       alert("Você Acertou !")
-      document.getElementById("botao-pergunta1").disabled = true;
+      // document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
-      empurra()
+      location.href = "#container3";
     } else if (resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c" || resposta === "D" || resposta === "d") {
-      document.getElementById("botao-pergunta1").disabled = true;
+      // document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "red";
       alert("Você Errou")
-      
+      location.href = "#container3";
     } else {
       alert("Você digitou um valor invalido")
       resposta = prompt("(A) Nintendinho (B) Nintendo Gameboy (C) Nintendo Wii (D) Pong       (Exemplo: A)")
@@ -365,6 +365,3 @@ function sobePagina() {//essa função é chamada quando todo o body carrega. el
   return window.scrollTo(0, 0)
 }
 
-function empurra(){
-  location.href = "#container3";
-}
