@@ -147,7 +147,7 @@ function verficiarAlternativa() {
       document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
-      location.href = "https://andernial.github.io/Projeto-Final--m1-/#container3";
+      location.href = "#container3";
     } else if (resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c" || resposta === "D" || resposta === "d") {
       document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "red";
