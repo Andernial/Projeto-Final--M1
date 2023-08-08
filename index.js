@@ -136,6 +136,10 @@ botaoPergunta11.addEventListener("click", function decimaSegundaPergunta() {
   verficiarAlternativa()
 
 })
+//botão avançar
+function avançar(){
+  location.href = "#container3";
+}
 
 // function para saber o fluxo das respostas
 function verficiarAlternativa() {
@@ -144,12 +148,12 @@ function verficiarAlternativa() {
   if (perguntas == 1) {
     if (resposta === "A" || resposta === "a") {
       alert("Você Acertou !")
-      // document.getElementById("botao-pergunta1").disabled = true;
+      document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "greenyellow";
       pontosJogador = pontosJogador + 1
       location.href = "#container3";
     } else if (resposta === "B" || resposta === "b" || resposta === "C" || resposta === "c" || resposta === "D" || resposta === "d") {
-      // document.getElementById("botao-pergunta1").disabled = true;
+      document.getElementById("botao-pergunta1").disabled = true;
       document.getElementById("lista1").style.color = "red";
       alert("Você Errou")
       location.href = "#container3";
