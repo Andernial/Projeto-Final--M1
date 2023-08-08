@@ -3,7 +3,7 @@
   src: url(./fontes/PressStart2P-Regular.ttf);
 }
 *{
-font-family: "press start";
+
 }
 body {
   margin: 0;
@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
   background-color: rgb(60, 57, 67);
   overflow: hidden;
+  font-family: "press start";
 }
 
 html {
