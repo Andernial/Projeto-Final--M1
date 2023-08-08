@@ -163,4 +163,8 @@ html {
   #erroNome{
     margin-top: 85px;
   }
+
+  #congratulaçoes{
+    line-height: 27px;
+ }
 }
