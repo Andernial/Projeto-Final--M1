@@ -35,6 +35,7 @@ html {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   /* Sombra suave */
   transition: 0.7s;
+  font-family: "press start";
 }
 
 .btn-menu:hover{
@@ -58,6 +59,7 @@ html {
   border: none;
   background-color: aquamarine;
   padding: 10px;
+  font-family: "press start";
 }
 
 
@@ -107,6 +109,7 @@ html {
   background-color: black;
   color: #fff;
   border: none;
+  font-family: "press start";
 }
 
 .btn:hover{
