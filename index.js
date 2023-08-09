@@ -1,6 +1,5 @@
 let pontosJogador = 0
 let perguntas = 0;
-let perguntaAtual = 0;
 const nomeJogador = document.getElementById("nome");
 
 const botao = document.getElementById("btn");
