@@ -87,21 +87,6 @@ html {
   text-align: center;
 }
 
-/* #errado1, #errado2, #errado3{
-  color: red;
-  height: 30px;
-  width: 30px;
-  display: none;
-}
-
-#certo1, #certo2, #certo3{
-  transition: 1s;
-  color: greenyellow;
-  height: 30px;
-  width: 30px;
-  display: none;
-} */
-
 .btn {
   cursor: pointer;
   width: 250px;
@@ -152,6 +137,7 @@ html {
   border: none;
   font-family: "press start";
 }
+
 /* media querys */
 @media screen and (max-width: 480px) {
   .btn-avanca {
@@ -160,11 +146,11 @@ html {
     background-color: transparent;
   }
 
-  #erroNome{
+  #erroNome {
     margin-top: 85px;
   }
 
-  #congratulaçoes{
+  #congratulaçoes {
     line-height: 27px;
- }
+  }
 }

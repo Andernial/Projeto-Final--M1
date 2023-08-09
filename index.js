@@ -5,11 +5,13 @@ const nomeJogador = document.getElementById("nome");
 
 const botao = document.getElementById("btn");
 botao.addEventListener("click", function verificarNome() {
-  if (nomeJogador.value === "") {
+  while (nomeJogador.value === "") {
     document.getElementById("erroNome").style.display = "block";
-    document.getElementById("nome").style.border = "2px solid red";
+    document.getElementById("nome").style.border = "3px solid red";
     document.getElementById("titulo-menu").style.marginBottom = "50px";
-  } else {
+    break
+  }
+  if (nomeJogador.value != "") {
     location.href = "#container2";
     document.getElementById("progresso").style.display = "block";
   }
@@ -467,9 +469,9 @@ function finalizarJogo() {
   // document.getElementById("botao-pergunta7").disabled = true;
   // document.getElementById("botao-result").style.display = "none";
   if (pontosJogador >= 0 && pontosJogador <= 3) {
-    document.getElementById("congratulaçoes").innerHTML = "Parabéns" + nomeJogador.value + " sua pontuação foi de <span style='color: red'>" + pontosJogador + "</span>"
+    document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " sua pontuação foi de <span style='color: red'>" + pontosJogador + "</span>"
   }
-  else if (pontosJogador > 3 && pontosJogador <= 6){
+  else if (pontosJogador > 3 && pontosJogador <= 6) {
     document.getElementById("congratulaçoes").innerHTML = "Parabéns " + nomeJogador.value + " sua pontuação foi de <span style='color: orange'>" + pontosJogador + "</span>"
   }
   else if (pontosJogador > 6 && pontosJogador <= 9) {
